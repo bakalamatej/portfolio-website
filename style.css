@@ -191,6 +191,13 @@ ul {
     margin-top: 0;
 }
 
+#contact .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 ::selection {
     background-color: #ccc9c9;
     color: #333;
