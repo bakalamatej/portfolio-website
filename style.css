@@ -315,10 +315,6 @@ h3 {
 		gap: 10px;
 	}
 	
-	#skills-list {
-        display: none;
-    }
-	
 	.nav-menu {
         display: flex;
         flex-direction: column;
