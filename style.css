@@ -235,7 +235,6 @@ h3 {
 }
 
 #mainpage {
-	padding-top: 10vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -374,7 +373,7 @@ h3 {
 	}
 
 	#mainpage {
-		padding-top: 5vh;
+		padding-top: calc(50px + 20vh);
 	}
 	
 	#mainpage h1 {
