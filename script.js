@@ -28,7 +28,7 @@ function toggleMenu() {
     nav.classList.toggle("show");
 }
 
-document.querySelectorAll(".nav-menu a").forEach(link => {
+document.querySelectorAll(".nav-menu li").forEach(link => {
     link.addEventListener("click", function () {
         var nav = document.querySelector(".nav-menu");
         nav.classList.remove("show");
@@ -48,11 +48,33 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         },
         {
-            threshold: 0.2,
+            threshold: 0.3,
         }
     );
 
     sections.forEach(section => {
         observer.observe(section);
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const themeToggle = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-theme");
+        themeToggle.textContent = "Switch to Light";
+    }
+
+    themeToggle.addEventListener("click", function () {
+        body.classList.toggle("dark-theme");
+
+        if (body.classList.contains("dark-theme")) {
+            themeToggle.textContent = "Switch to Light";
+            localStorage.setItem("theme", "dark");
+        } else {
+            themeToggle.textContent = "Switch to Dark";
+            localStorage.setItem("theme", "light");
+        }
     });
 });
