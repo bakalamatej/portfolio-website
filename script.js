@@ -28,7 +28,7 @@ function toggleMenu() {
     nav.classList.toggle("show");
 }
 
-document.querySelectorAll(".nav-menu li").forEach(link => {
+document.querySelectorAll(".nav-menu").forEach(link => {
     link.addEventListener("click", function () {
         var nav = document.querySelector(".nav-menu");
         nav.classList.remove("show");
