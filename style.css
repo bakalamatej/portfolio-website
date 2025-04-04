@@ -144,13 +144,23 @@ hr {
 	z-index: 90;
 }
 
+.name {
+	display: flex;
+	flex-direction: column;
+	align-self: stretch;
+	padding-bottom: 10vh;
+	padding-top: 20vh;
+}
+
+.name h1:last-child {
+	padding-top: 5vh;
+    text-align: right;
+}
+
 h1 {
-    padding-bottom: 50px;
     color: var(--h1-color);
     font-weight: 550;
-    text-align: center;
     font-size: 11vw;
-    line-height: 1.5
 }
 
 h2 {
@@ -245,10 +255,10 @@ h3 {
 #mainpage {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 90vh;
-	width: 80%;
+	align-items: flex-start;
+	text-align: left;
+	width: 70%;
+	min-height: 90vh;
 	margin: 0 auto;
 }
 
@@ -388,10 +398,6 @@ h3 {
 		font-size: 16px;
 	}
 
-	#mainpage {
-		padding-top: calc(50px + 20vh);
-	}
-	
 	#mainpage h1 {
 		padding-bottom: 0px;
 	}
@@ -407,6 +413,16 @@ h3 {
 		height: 100%;
 		max-height: 77vw;
 		border-radius: 20px;
+		align-self: center;
+	}
+	
+	.name {
+		padding-bottom: 10px;
+	}
+	
+	.name h1:last-child {
+		padding-top: 10px;
+		text-align: right;
 	}
 	
 	#experience .experience-content {
@@ -445,6 +461,10 @@ h3 {
 	
 	.about-content img {
 		display: none;
+	}
+	
+	h1 {
+		
 	}
 	
 	h2 {
