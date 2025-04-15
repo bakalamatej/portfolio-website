@@ -36,7 +36,7 @@ document.querySelectorAll(".nav-menu").forEach(link => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll(".section");
+    const sections = document.querySelectorAll(".segment");
 
     const observer = new IntersectionObserver(
         (entries, observer) => {
