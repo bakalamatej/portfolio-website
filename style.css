@@ -96,18 +96,20 @@ body {
 .nav-menu a, span {
     color: #edf0f1;
 	border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s ease;
+    transition: border-bottom 0.5s ease, transform 0.3s ease;
 	text-decoration: none;
 	font-weight: 500;
 }
 
 .nav-menu a:hover {
     border-bottom: 1px solid #edf0f1;
+	transform: scale(1.02);
 }
 
 .nav-menu span:hover {
     cursor: pointer; 
     border-bottom: 1px solid #edf0f1;
+	transform: scale(1.02);
 }
 
 .hamburger {
@@ -207,6 +209,10 @@ h3 {
     justify-content: space-around;
 }
 
+.project-list p {
+    font-size: 16px;
+}
+
 .project-item {
     display: flex;
     flex-direction: column;
@@ -215,38 +221,64 @@ h3 {
     text-align: center;
     border-radius: 15px;
     padding: 20px;
-    width: 300px;
+    width: 400px;
 	background-color: var(--oposite-color);
 	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease;
 }
 
 .project-item p, h3 {
 	color: var(--text-color);
 }
 
-.btn {
+.project-item:hover {
+    transform: scale(1.02);
+}
+
+.project-item img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.theme-img {
+    display: none;
+}
+
+body:not(.dark-theme) .light-img {
+    display: block;
+}
+
+body.dark-theme .dark-img {
+    display: block;
+}
+
+.button {
 	color: var(--oposite-color);
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--primary-color);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 10px;
     transition: background-color 0.3s ease;
 }
 
-.btn:hover{
+.button:hover{
     background-color: var(--secondary-color);
 }
 
 #contact a {
     text-decoration: none;
     border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s ease;
+    transition: border-bottom 0.5s ease, transform 0.3s ease;
 }
 
 #contact a:hover {
     border-bottom: 1px solid var(--text-color);
+	transform: scale(1.02);
 }
 
 #credit p {
@@ -497,7 +529,11 @@ h3 {
 	}
 	
 	.project-item {
-		width: 250px;
+		width: 300px;
+	}
+	
+	.project-list p {
+		font-size: 15px;
 	}
 }
 
