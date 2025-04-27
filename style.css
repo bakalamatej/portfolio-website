@@ -103,13 +103,13 @@ body {
 
 .nav-menu a:hover {
     border-bottom: 1px solid #edf0f1;
-	transform: scale(1.02);
+	transform: scale(1.04);
 }
 
 .nav-menu span:hover {
     cursor: pointer; 
     border-bottom: 1px solid #edf0f1;
-	transform: scale(1.02);
+	transform: scale(1.04);
 }
 
 .hamburger {
@@ -263,11 +263,12 @@ body.dark-theme .dark-img {
     text-decoration: none;
     border-radius: 10px;
     margin-top: 10px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover{
     background-color: var(--secondary-color);
+	transform: scale(1.02);
 }
 
 #contact a {
@@ -278,7 +279,7 @@ body.dark-theme .dark-img {
 
 #contact a:hover {
     border-bottom: 1px solid var(--text-color);
-	transform: scale(1.02);
+	transform: scale(1.04);
 }
 
 #credit p {
@@ -363,7 +364,7 @@ body.dark-theme .dark-img {
 
 #back-to-top:hover {
     background-color: var(--backtoph-color);
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
 
 ::selection {
